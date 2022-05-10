@@ -143,8 +143,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Discord',
+                label: 'Main Discord',
                 href: 'https://discord.infernalsuite.com/',
+              },
+              {
+                label: 'Ultimate Core Discord',
+                href: 'https://discord.com/invite/QgtsnbgP3f',
               },
             ],
           },
@@ -158,6 +162,14 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/InfernalSuite',
+              },
+              {
+                label: 'Spigot',
+                href: 'https://www.spigotmc.org/resources/authors/infernalsuite.1524369/',
+              },
+              {
+                label: 'MC Market',
+                href: 'https://www.mc-market.org/members/353325/#resources',
               },
             ],
           },
