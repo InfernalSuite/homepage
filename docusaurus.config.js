@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Inferal Suite',
+  title: 'Infernal Suite',
   tagline: 'Dinosaurs are cool',
   url: 'https://infernalsuite.com',
   baseUrl: '/',
@@ -39,7 +39,25 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        docs_aswm: {
+          id: 'aswm',
+          path: 'docs/aswm',
+          routeBasePath: 'docs/aswm',
+          sidebarPath: require.resolve('./sidebarsASWM.js'),
+        },
+        docs_uc: {
+          id: 'community',
+          path: 'docs/uc',
+          routeBasePath: 'docs/uc',
+          sidebarPath: require.resolve('./sidebarsUC.js'),
+        },
+        docs_iwm: {
+          id: 'community',
+          path: 'docs/iwm',
+          routeBasePath: 'docs/iwm',
+          sidebarPath: require.resolve('./sidebarsIWM.js'),
         },
         blog: {
           showReadingTime: true,
@@ -73,7 +91,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/InfernalSuite/homepage',
+            href: 'https://github.com/InfernalSuite',
             label: 'GitHub',
             position: 'right',
           },
@@ -86,8 +104,20 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Overview',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Advanced Slime World Manager',
+                to: '/docs/aswm/intro',
+              },
+              {
+                label: 'Ultimate Core',
+                to: '/docs/uc/intro',
+              },
+              {
+                label: 'Infernal World Manager',
+                to: '/docs/iwm/intro',
               },
             ],
           },
@@ -95,12 +125,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.infernalsuite.com/',
               },
               {
                 label: 'Twitter',
@@ -117,7 +143,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/InfernalSuite',
               },
             ],
           },
