@@ -27,6 +27,11 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+    },
   },
 
   presets: [
@@ -35,29 +40,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          path: 'docs',
+          routeBasePath: 'docs/overview',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
               'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        docs_aswm: {
-          id: 'aswm',
-          path: 'docs/aswm',
-          routeBasePath: 'docs/aswm',
-          sidebarPath: require.resolve('./sidebarsASWM.js'),
-        },
-        docs_uc: {
-          id: 'community',
-          path: 'docs/uc',
-          routeBasePath: 'docs/uc',
-          sidebarPath: require.resolve('./sidebarsUC.js'),
-        },
-        docs_iwm: {
-          id: 'community',
-          path: 'docs/iwm',
-          routeBasePath: 'docs/iwm',
-          sidebarPath: require.resolve('./sidebarsIWM.js'),
         },
         blog: {
           showReadingTime: true,
@@ -70,6 +58,36 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'aswm',
+        path: 'docs_aswm',
+        routeBasePath: 'docs/aswm',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'uc',
+        path: 'docs_uc',
+        routeBasePath: 'docs/uc',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'iwm',
+        path: 'docs_iwm',
+        routeBasePath: 'docs/iwm',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
     ],
   ],
 
@@ -105,19 +123,19 @@ const config = {
             items: [
               {
                 label: 'Overview',
-                to: '/docs/intro',
+                to: 'docs/overview/intro',
               },
               {
                 label: 'Advanced Slime World Manager',
-                to: '/docs/aswm/intro',
+                to: 'docs/aswm',
               },
               {
                 label: 'Ultimate Core',
-                to: '/docs/uc/intro',
+                to: 'docs/uc',
               },
               {
                 label: 'Infernal World Manager',
-                to: '/docs/iwm/intro',
+                to: 'docs/iwm',
               },
             ],
           },
@@ -127,10 +145,6 @@ const config = {
               {
                 label: 'Discord',
                 href: 'https://discord.infernalsuite.com/',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -148,7 +162,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Infernal Suite. Built with Docusaurus ♥.`,
       },
       prism: {
         theme: lightCodeTheme,
