@@ -105,10 +105,35 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
+            type: 'dropdown',
             label: 'Documentation',
+            position: 'left',
+            to: 'docs/overview',
+            items: [
+              {
+                type: 'doc',
+                label: 'Overview',
+                docId: 'index',
+              },
+              {
+                type: 'doc',
+                label: 'Advanced Slime World Manager',
+                docId: 'index',
+                docsPluginId: 'aswm',
+              },
+              {
+                type: 'doc',
+                label: 'Ultimate Core',
+                docId: 'index',
+                docsPluginId: 'uc',
+              },
+              {
+                type: 'doc',
+                label: 'Infernal World Manager',
+                docId: 'index',
+                docsPluginId: 'iwm',
+              },
+            ],
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
