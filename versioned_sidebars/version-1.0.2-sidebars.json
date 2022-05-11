@@ -1,0 +1,16 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "category",
+      "label": "Tutorial",
+      "items": [
+        "index"
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Home",
+      "href": "/"
+    }
+  ]
+}

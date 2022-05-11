@@ -1,0 +1,24 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "doc",
+      "id": "index",
+      "label": "Overview"
+    },
+    {
+      "type": "link",
+      "label": "Advanced Slime World Manager",
+      "href": "/docs/aswm"
+    },
+    {
+      "type": "link",
+      "label": "Ultimate Core",
+      "href": "/docs/uc"
+    },
+    {
+      "type": "link",
+      "label": "Infernal World Manager",
+      "href": "/docs/iwm"
+    }
+  ]
+}

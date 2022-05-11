@@ -13,27 +13,19 @@
   },
   "link.item.label.Overview": {
     "message": "Overview",
-    "description": "The label of footer link with label=Overview linking to /docs/overview/intro"
+    "description": "The label of footer link with label=Overview linking to docs/overview"
   },
   "link.item.label.Advanced Slime World Manager": {
     "message": "Advanced Slime World Manager",
-    "description": "The label of footer link with label=Advanced Slime World Manager linking to /docs/aswm/intro"
+    "description": "The label of footer link with label=Advanced Slime World Manager linking to docs/aswm"
   },
   "link.item.label.Ultimate Core": {
     "message": "Ultimate Core",
-    "description": "The label of footer link with label=Ultimate Core linking to /docs/uc/intro"
+    "description": "The label of footer link with label=Ultimate Core linking to docs/uc"
   },
   "link.item.label.Infernal World Manager": {
     "message": "Infernal World Manager",
-    "description": "The label of footer link with label=Infernal World Manager linking to /docs/iwm/intro"
-  },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discord.infernalsuite.com/"
-  },
-  "link.item.label.Twitter": {
-    "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
+    "description": "The label of footer link with label=Infernal World Manager linking to docs/iwm"
   },
   "link.item.label.Blog": {
     "message": "Blog",
@@ -42,5 +34,25 @@
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/InfernalSuite"
+  },
+  "link.item.label.Main Discord": {
+    "message": "Main Discord",
+    "description": "The label of footer link with label=Main Discord linking to https://discord.infernalsuite.com/"
+  },
+  "link.item.label.Ultimate Core Discord": {
+    "message": "Ultimate Core Discord",
+    "description": "The label of footer link with label=Ultimate Core Discord linking to https://discord.com/invite/QgtsnbgP3f"
+  },
+  "link.item.label.Spigot": {
+    "message": "Spigot",
+    "description": "The label of footer link with label=Spigot linking to https://www.spigotmc.org/resources/authors/infernalsuite.1524369/"
+  },
+  "link.item.label.MC Market": {
+    "message": "MC Market",
+    "description": "The label of footer link with label=MC Market linking to https://www.mc-market.org/members/353325/#resources"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 Infernal Suite. Built with Docusaurus ♥.",
+    "description": "The footer copyright"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "1.0.3",
+    "description": "The label for version 1.0.3"
+  },
+  "sidebar.tutorialSidebar.link.Advanced Slime World Manager": {
+    "message": "Advanced Slime World Manager",
+    "description": "The label for link Advanced Slime World Manager in sidebar tutorialSidebar, linking to docs/aswm"
+  },
+  "sidebar.tutorialSidebar.link.Ultimate Core": {
+    "message": "Ultimate Core",
+    "description": "The label for link Ultimate Core in sidebar tutorialSidebar, linking to docs/uc"
+  },
+  "sidebar.tutorialSidebar.link.Infernal World Manager": {
+    "message": "Infernal World Manager",
+    "description": "The label for link Infernal World Manager in sidebar tutorialSidebar, linking to docs/iwm"
+  }
+}

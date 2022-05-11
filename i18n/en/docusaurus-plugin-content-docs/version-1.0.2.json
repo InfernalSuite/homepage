@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "1.0.2",
+    "description": "The label for version 1.0.2"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label for category Tutorial in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.link.Home": {
+    "message": "Home",
+    "description": "The label for link Home in sidebar tutorialSidebar, linking to /"
+  }
+}
