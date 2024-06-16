@@ -8,20 +8,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Infernal Suite',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://infernalsuite.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'InfernalSuite', // Usually your GitHub org/user name.
+  projectName: 'homepage', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,18 +40,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'docs',
+          routeBasePath: 'docs/overview',
+          sidebarPath: require.resolve('./sidebarsOverview.js'),
+          editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -60,30 +58,93 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'asp',
+        path: 'docs_asp',
+        routeBasePath: 'docs/asp',
+        sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'uc',
+        path: 'docs_uc',
+        routeBasePath: 'docs/uc',
+        sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'iwm',
+        path: 'docs_iwm',
+        routeBasePath: 'docs/iwm',
+        sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Infernal Suite',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Infernal Suite Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
+            label: 'Documentation',
             position: 'left',
-            label: 'Tutorial',
+            to: 'docs/overview',
+            items: [
+              {
+                type: 'doc',
+                label: 'Overview',
+                docId: 'index',
+              },
+              {
+                type: 'doc',
+                label: 'Advanced Slime World Manager',
+                docId: 'index',
+                docsPluginId: 'asp',
+              },
+              {
+                type: 'doc',
+                label: 'Ultimate Core',
+                docId: 'index',
+                docsPluginId: 'uc',
+              },
+              {
+                type: 'doc',
+                label: 'Infernal World Manager',
+                docId: 'index',
+                docsPluginId: 'iwm',
+              },
+            ],
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   href: 'https://github.com/InfernalSuite/homepage',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -93,8 +154,20 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Overview',
+                to: 'docs/overview',
+              },
+              {
+                label: 'Advanced Slime World Manager',
+                to: 'docs/asp',
+              },
+              {
+                label: 'Ultimate Core',
+                to: 'docs/uc',
+              },
+              {
+                label: 'Infernal World Manager',
+                to: 'docs/iwm',
               },
             ],
           },
@@ -102,16 +175,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Main Discord',
+                href: 'https://discord.infernalsuite.com/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Ultimate Core Discord',
+                href: 'https://discord.com/invite/QgtsnbgP3f',
               },
             ],
           },
@@ -119,17 +188,21 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub',
+                href: 'https://github.com/InfernalSuite',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Spigot',
+                href: 'https://www.spigotmc.org/resources/authors/infernalsuite.1524369/',
+              },
+              {
+                label: 'MC Market',
+                href: 'https://www.mc-market.org/members/353325/#resources',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Infernal Suite. Built with Docusaurus ♥.`,
       },
       prism: {
         theme: prismThemes.github,
