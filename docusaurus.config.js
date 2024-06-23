@@ -68,27 +68,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
       },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'uc',
-        path: 'docs_uc',
-        routeBasePath: 'docs/uc',
-        sidebarPath: require.resolve('./sidebars.js'),
-        editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'iwm',
-        path: 'docs_iwm',
-        routeBasePath: 'docs/iwm',
-        sidebarPath: require.resolve('./sidebars.js'),
-        editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
-      },
-    ],
+    ]
   ],
 
   themeConfig:
@@ -121,22 +101,10 @@ const config = {
               },
               {
                 type: 'doc',
-                label: 'Advanced Slime World Manager',
+                label: 'Advanced Slime Paper',
                 docId: 'index',
                 docsPluginId: 'asp',
-              },
-              {
-                type: 'doc',
-                label: 'Ultimate Core',
-                docId: 'index',
-                docsPluginId: 'uc',
-              },
-              {
-                type: 'doc',
-                label: 'Infernal World Manager',
-                docId: 'index',
-                docsPluginId: 'iwm',
-              },
+              }
             ],
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
@@ -158,30 +126,18 @@ const config = {
                 to: 'docs/overview',
               },
               {
-                label: 'Advanced Slime World Manager',
+                label: 'Advanced Slime Paper',
                 to: 'docs/asp',
-              },
-              {
-                label: 'Ultimate Core',
-                to: 'docs/uc',
-              },
-              {
-                label: 'Infernal World Manager',
-                to: 'docs/iwm',
-              },
+              }
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Main Discord',
+                label: 'Discord',
                 href: 'https://discord.infernalsuite.com/',
-              },
-              {
-                label: 'Ultimate Core Discord',
-                href: 'https://discord.com/invite/QgtsnbgP3f',
-              },
+              }
             ],
           },
           {

@@ -23,17 +23,7 @@ const sidebars = {
       type: 'link',
       label: 'Advanced Slime Paper',
       href: '/docs/asp',
-    },
-    {
-      type: 'link',
-      label: 'Ultimate Core',
-      href: '/docs/uc',
-    },
-    {
-      type: 'link',
-      label: 'Infernal World Manager',
-      href: '/docs/iwm',
-    },
+    }
   ],
 };
 

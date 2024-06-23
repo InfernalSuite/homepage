@@ -40,3 +40,7 @@
   --ifm-hero-background-color: #572245;
   --ifm-hero-text-color: #e6e6e6;
 }
+
+.code-block {
+  padding-top: 100px;
+}
