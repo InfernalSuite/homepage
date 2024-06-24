@@ -155,12 +155,17 @@ const config = {
                 label: 'MC Market',
                 href: 'https://www.mc-market.org/members/353325/#resources',
               },
+              {
+                label: 'Javadocs',
+                href: 'https://docs.infernalsuite.com/',
+              }
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Infernal Suite. Built with Docusaurus ♥.`,
       },
       prism: {
+        additionalLanguages: ['java', 'groovy'],
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
