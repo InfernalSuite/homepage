@@ -10,6 +10,7 @@ This means, that now the plugin is no longer required to use the API, as it is p
 
 ## Migrating the API
 The API has undergone rework and the main API class has been renamed from `SlimePlugin` to `AdvancedSlimePaperAPI`.
+Please note that **the locking system has been removed**, you now have to handle it yourself.
 
 ### What does this mean for me?
 

@@ -56,7 +56,7 @@ dependencies {
 Now that you've added the API artifact to your project, you can get the API instance by calling `AdvancedSlimePaperAPI.instance()`.
 
 ```java
-AdvancedSlimePaperAPI api = AdvancedSlimePaperAPI.instance();
+AdvancedSlimePaperAPI asp = AdvancedSlimePaperAPI.instance();
 
 // Do stuff
 ```
