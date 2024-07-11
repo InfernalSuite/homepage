@@ -33,7 +33,7 @@ Firstly, you need to add the API artifact to your project. You can do this by ad
   <dependency>
     <groupId>com.infernalsuite.aswm</groupId>
     <artifactId>api</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.0-SNAPSHOT</version>
     <scope>provided</scope>
   </dependency>
 </dependencies>

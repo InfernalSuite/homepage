@@ -5,12 +5,12 @@ sidebar_position: 99
 # Migrating from SWM
 Since version 1.21.0, the plugin (formerly SlimeWorldManager) has been decoupled from the server (ASP) and is now known as the Slime World Plugin (SWP).
 
-This means, that now the plugin is no longer required to use the API, as it is provided by the server itself.\
+This means, that now the plugin is no longer required to use the API, as the API is provided by the server itself.\
 **If you want to keep the commands and features that the plugin provided, you can install the [Slime World Plugin](swp/installation) on your server.**
 
 ## Migrating the API
 The API has undergone rework and the main API class has been renamed from `SlimePlugin` to `AdvancedSlimePaperAPI`.
-Please note that **the locking system has been removed**, you now have to handle it yourself.
+Please note that **the locking system has been removed**, you now have to handle locking the worlds yourself.
 
 ### What does this mean for me?
 

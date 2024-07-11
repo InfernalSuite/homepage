@@ -17,7 +17,7 @@ You need to shade the loaders into your plugin. You can do this by adding the fo
   <dependency>
     <groupId>com.infernalsuite.aswm</groupId>
     <artifactId>loaders</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
