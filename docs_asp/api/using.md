@@ -46,7 +46,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.infernalsuite.aswm:api:3.0.0'
+    compileOnly 'com.infernalsuite.aswm:api:3.0.0-SNAPSHOT'
 }
 ```
 

@@ -25,7 +25,7 @@ You need to shade the loaders into your plugin. You can do this by adding the fo
 ### Gradle
 ```groovy
 dependencies {
-    implementation 'com.infernalsuite.aswm:loaders:3.0.0'
+    implementation 'com.infernalsuite.aswm:loaders:3.0.0-SNAPSHOT'
 }
 ```
 
