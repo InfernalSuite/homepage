@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Commands & Permissions
 
-This pages contains all the commands inside ASWM, alongside their respective permissions and usages. Arguments within angle brackets are required, and the ones within square brackets are optional.
+This pages contains all the commands inside ASP, alongside their respective permissions and usages. Arguments within angle brackets are required, and the ones within square brackets are optional.
 
 The `swm.*` permission will grant access to all commands.
 

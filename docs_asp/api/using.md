@@ -31,7 +31,7 @@ Firstly, you need to add the API artifact to your project. You can do this by ad
 ```xml
 <dependencies>
   <dependency>
-    <groupId>com.infernalsuite.aswm</groupId>
+    <groupId>com.infernalsuite.asp</groupId>
     <artifactId>api</artifactId>
     <version>4.0.0-SNAPSHOT</version>
     <scope>provided</scope>
