@@ -9,15 +9,23 @@ You can either create your own loader by implementing the `SlimeLoader` interfac
 This page will focus on the latter option.
 
 ## Obtaining the reference loaders
-You need to shade the loaders into your plugin. You can do this by adding the following Maven or Gradle dependencies:
+Out of the box there are the following loaders available:
+- `file-loader`: Read/write to disk
+- `mongo-loader`: Read/write to a MongoDB database
+- `mysql-loader`: Read/write to a MySQL database
+- `redis-loader`: Read/write to a Redis database
+- `api-loader` - Allows you to load worlds from a http api
+
+You can also import all default loaders by importing the `loaders` BOM package. In order to use the loaders,
+you need to shade the loaders into your plugin. You can do this by adding the following Maven or Gradle dependencies:
 
 ### Maven
 ```xml
 <dependencies>
   <dependency>
-    <groupId>com.infernalsuite.aswm</groupId>
-    <artifactId>loaders</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <groupId>com.infernalsuite.asp</groupId>
+    <artifactId>{loader name}</artifactId>
+    <version>4.0.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
@@ -25,9 +33,10 @@ You need to shade the loaders into your plugin. You can do this by adding the fo
 ### Gradle
 ```groovy
 dependencies {
-    implementation 'com.infernalsuite.aswm:loaders:3.0.0-SNAPSHOT'
+    implementation 'com.infernalsuite.asp:{loader name}:4.0.0-SNAPSHOT'
 }
 ```
+*Replace `{loader name}` with one of the available loaders*
 
 Don't forget that the reference loaders are not included with the server; **you have to shade them into your plugin**.
 

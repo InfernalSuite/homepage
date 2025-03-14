@@ -36,11 +36,12 @@ This can be done by calling the `loadWorld` method in the `AdvancedSlimePaperAPI
  * world - the deserialized world to load, obtained from the previous step
  * true - whether to call the bukkit org.bukkit.event.world.WorldLoadEvent
  */
-SlimeWorld mirror = asp.loadWorld(world, true);
+SlimeWorldInstance worldInstance = asp.loadWorld(world, true);
 // Now the world is loaded into the server and can be interacted with
+World world = worldInstance.getBukkitWorld();
 ```
 
-*What's the `mirror`? It's a unique instance of the loaded world.*
+*What's the `worldInstance`? It's a live slime representation of the loaded world.*
 
 Fantastic! You have now successfully loaded a world into the server.\
 You can try to teleport to it, interact with it, or do whatever you want with it.
