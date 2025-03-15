@@ -60,10 +60,17 @@ const config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-content-docs',
+      'content-docs',
       {
         id: 'asp',
         path: 'docs_asp',
+        lastVersion: "current",
+        versions: {
+          current: {
+            label: "4.0.0",
+            path: "",
+          },
+        },
         routeBasePath: 'docs/asp',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
@@ -81,6 +88,7 @@ const config = {
       },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+
       navbar: {
         title: 'Infernal Suite',
         logo: {
@@ -106,6 +114,11 @@ const config = {
                 docsPluginId: 'asp',
               }
             ],
+          },
+          {
+            type: 'docsVersionDropdown',
+            docsPluginId: 'asp',
+            position: 'right'
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {

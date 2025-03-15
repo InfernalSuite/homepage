@@ -7,13 +7,13 @@ sidebar_position: 1
 We have the following projects:
 
 - **ASP** - Production ready, active development
-  - [Paper](https://github.com/InfernalSuite/AdvancedSlimePaper)
-  - [Pufferfish](https://github.com/InfernalSuite/ASPufferfish)
-  - [Purpur](https://github.com/InfernalSuite/AdvancedSlimePurpur)
+    - [Paper](https://github.com/InfernalSuite/AdvancedSlimePaper)
+    - [Pufferfish](https://github.com/InfernalSuite/ASPufferfish)
+    - [Purpur](https://github.com/InfernalSuite/AdvancedSlimePurpur)
 - **IWM** - Active development
-  - [GitHub](https://github.com/InfernalSuite/InfernalWorldManager)
+    - [GitHub](https://github.com/InfernalSuite/InfernalWorldManager)
 - **UC** - Discontinued
-  - [GitHub](https://github.com/InfernalSuite/UltimateCore)
+    - [GitHub](https://github.com/InfernalSuite/UltimateCore)
 
 ---
 
