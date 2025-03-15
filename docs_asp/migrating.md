@@ -17,7 +17,7 @@ However, if you do, you'll need to adapt to the new Kyori NBT library. It's wort
 Another change is in how you get the Bukkit world. Instead of using `Bukkit#getWorld(String)`, you can now obtain the world through the `SlimeWorldInstance` now returned when calling `AdvancedSlimePaperAPI#loadWorld(SlimeWorld, boolean)`, using the method `SlimeWorldInstance#getBukkitWorld()`.
 
 #### Slime Loaders
-Slime Loaders have been seperated into different maven packages, so you can choose what loaders you want to bundle with your plugin:
+Slime Loaders have been separated into different maven packages, so you can choose what loaders you want to bundle with your plugin:
  - `com.infernalsuite.asp:loaders` - Contains a BOM package of all default loaders, like previously
  - `com.infernalsuite.asp:api-loader` - The HTTP api loader
  - `com.infernalsuite.asp:file-loader` - The file loader
@@ -25,7 +25,7 @@ Slime Loaders have been seperated into different maven packages, so you can choo
  - `com.infernalsuite.asp:redis-loader` - The Redis loader
  - `com.infernalsuite.asp:mongo-loader` - The MongoDB loader
 
-Custom loaders implementing the `UpdatableLoader` class no longer have to implement the loaders package as it is now implemented in the API itself. The `NewerDatabaseException` of the updatable loader has also been changed to `NewerStorageException` and its field `currentVersion` is now `implementationVersion` and `databaseVersion` is now `storageVersion` so its wording applies to more than just databases.
+Custom loaders implementing the `UpdatableLoader` class no longer have to import the loaders package, as it is now implemented in the API itself. The `NewerDatabaseException` of the updatable loader has also been changed to `NewerStorageException` and its field `currentVersion` is now `implementationVersion` and `databaseVersion` is now `storageVersion` so its wording applies to more than just databases.
 
 #### Events
 In API 3.0 there were also a few events that were never actually called, so they have been removed:
@@ -41,7 +41,7 @@ In API 3.0 there were also a few events that were never actually called, so they
  - `PreGenerateWorldEvent`
 
 #### Exceptions
-The `InvalidVersionException` exception has been removed as it was never thrown.
+The `InvalidVersionException` exception has been removed, as it was never thrown.
 
 ## Migrating from SWM
 Since version 1.21.0, the plugin (formerly SlimeWorldManager) has been decoupled from the server (ASP) and is now known as the Slime World Plugin (SWP).
