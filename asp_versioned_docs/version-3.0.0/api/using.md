@@ -31,9 +31,9 @@ Firstly, you need to add the API artifact to your project. You can do this by ad
 ```xml
 <dependencies>
   <dependency>
-    <groupId>com.infernalsuite.asp</groupId>
+    <groupId>com.infernalsuite.aswm</groupId>
     <artifactId>api</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
     <scope>provided</scope>
   </dependency>
 </dependencies>
@@ -46,9 +46,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.infernalsuite.asp:api:4.0.0-SNAPSHOT'
+    compileOnly 'com.infernalsuite.aswm:api:3.0.0-SNAPSHOT'
 }
 ```
+
+**If you run into any Flow-NBT errors when building your project, add the additional repository: `https://repo.rapture.pw/repository/maven-releases/`**
 
 ## Getting the API instance
 Now that you've added the API artifact to your project, you can get the API instance by calling `AdvancedSlimePaperAPI.instance()`.
