@@ -1,6 +1,6 @@
 # Common issues
 
-# Zip file closed/similar errors when shutting down or reloading
+## Zip file closed/similar errors when shutting down or reloading
 
 Every plugin interacting with the api should unload (and optionally save all) all worlds loaded by the plugin during `JavaPlugin#onDisable()`. Failing to do so can cause errors.
 
