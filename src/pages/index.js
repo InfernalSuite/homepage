@@ -51,7 +51,7 @@ export default function Home() {
                         description={"A Paper/Purpur and Pufferfish fork adding a custom, more efficient, world format suitable for smaller worlds like minigame maps or per-player-worlds."}
                         status={"Active development"}
                         docsLink={"/docs/asp"}
-                        // downloadLink={"/download/asp"} //Re-add this when downloads are implemented
+                        downloadLink={"/download/asp"}
                         githubLink={"https://github.com/InfernalSuite/AdvancedSlimePaper"}
                     />
                     <HomePageProject name={"InfernalWorldManager"} status={"?"} active={true}

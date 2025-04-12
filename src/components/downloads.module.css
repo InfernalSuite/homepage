@@ -1,0 +1,88 @@
+
+
+:root {
+    --downloads-header-color: #303846;
+    --downloads-header-text: #ffffff;
+    --downloads-body-color: #e1e1e1;
+    --downloads-entry-hover: #c4c4c4;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --downloads-body-color: #272d38;
+    --downloads-entry-hover: #1f262e;
+}
+
+
+.downloadContainer {
+    background: var(--downloads-body-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.downloadHeader {
+    background: var(--downloads-header-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.downloadHeader select {
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.downloadHeader p {
+    color: var(--downloads-header-text)
+}
+
+.downloadHeaderSelect {
+    display: flex;
+    gap: 5px;
+}
+
+.downloadHeader p {
+    margin: 0;
+    font-weight: 650;
+}
+
+.buildContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.build {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.build:hover {
+    background-color: var(--downloads-entry-hover);
+    transition: color;
+}
+
+.build .date {
+    margin: 1px 10px;
+}
+.build .changeList {
+    max-width: 100%;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.build .changeList p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.build .downloads {
+    display: flex;
+    gap: 5px;
+    margin: 6px 10px
+}

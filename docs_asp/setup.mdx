@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 ---
+import AswmDownload from '@site/src/components/aswm-download';
 
 # Setup
 This page covers how to quickly get ASP up and running on your server.
@@ -22,24 +23,15 @@ ASP is actively developed for Paper; Pufferfish and Purpur versions are based on
 
 ### ASPaper
 We recommend using the Paper version for the most stable experience.
+AdvancedSlimePaper builds are split into several branches, including main, develop, and various feature or PR branches.
 
-#### Main
-Tested and ready for production.
-```
-Download links will be added later
-```
+The `main` branch is stable and well-tested, but it may not always include the latest Paper commits. For bleeding-edge updates, see `paper_upstream`, which includes untested automatic changes.
 
-#### Develop
-Contains the latest features and bug fixes, but is **BARELY** tested and might not work at all.
-```
-Download links will be added later
-```
+The `develop` branch is experimental — it’s generally up-to-date with the latest features and versions, but may include a few bugs.
 
-#### Upstream
-Contains the latest patches from Paper, but is **NOT** tested.
-```
-Download links will be added later
-```
+All other branches should be considered highly unstable. These may include breaking API changes, incomplete features, or **unsafe third-party code** from pull requests.
+
+<AswmDownload slug={"asp"} github={"https://github.com/InfernalSuite/AdvancedSlimePaper"}></AswmDownload>
 
 ### ASPufferfish
 The Pufferfish version is updated less frequently than Paper.
