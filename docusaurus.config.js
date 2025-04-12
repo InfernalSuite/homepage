@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Infernal Suite',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Documentation for all Infernal Suite projects including AdvancedSlimePaper',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -45,12 +45,7 @@ const config = {
           sidebarPath: require.resolve('./sidebarsOverview.js'),
           editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/InfernalSuite/homepage/tree/main/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -87,7 +82,6 @@ const config = {
         respectPrefersColorScheme: true,
       },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
 
       navbar: {
         title: 'Infernal Suite',
@@ -97,23 +91,28 @@ const config = {
         },
         items: [
           {
-            type: 'dropdown',
-            label: 'Documentation',
-            position: 'left',
-            to: 'docs/overview',
+            type: "dropdown",
+            label: "AdvancedSlimePaper",
+            position: "left",
+            to: "docs/asp",
             items: [
               {
-                type: 'doc',
-                label: 'Overview',
-                docId: 'index',
+                label: "Setup",
+                to: "docs/asp/setup",
+                activeBaseRegex: "\\/docs/asp/setup",
               },
               {
-                type: 'doc',
-                label: 'Advanced Slime Paper',
-                docId: 'index',
-                docsPluginId: 'asp',
-              }
-            ],
+                label: "API",
+                to: "docs/asp/api",
+                activeBaseRegex: "\\/docs/asp/api.*",
+              },
+              {
+                type: "doc",
+                label: "Plugin",
+                docId: "index",
+                activeBaseRegex: "\\/docs/asp/swp.*",
+              },
+            ]
           },
           {
             type: 'docsVersionDropdown',
