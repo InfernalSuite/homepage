@@ -14,7 +14,9 @@ Additionally, the NBT library has been switched from FlowNBT to Kyori NBT. As a 
 you still need it for something else. If you're not using any additional Slime API methods or accessing extra data, there should be no changes needed.
 However, if you do, you'll need to adapt to the new Kyori NBT library. It's worth noting that Kyori NBT is immutable, so when you modify data (e.g. extra data), you'll need to update your code accordingly.
 
-Another change is in how you get the Bukkit world. Instead of using `Bukkit#getWorld(String)`, you can now obtain the world through the `SlimeWorldInstance` now returned when calling `AdvancedSlimePaperAPI#loadWorld(SlimeWorld, boolean)`, using the method `SlimeWorldInstance#getBukkitWorld()`.
+Another change is in how you can get the Bukkit world. Instead of just using `Bukkit#getWorld(String)`, you are now also able to obtain the world through the `SlimeWorldInstance` now returned when calling `AdvancedSlimePaperAPI#loadWorld(SlimeWorld, boolean)`, using the method `SlimeWorldInstance#getBukkitWorld()`. 
+
+The `SlimeWorld#clone(String,SlimeLoader)` method always copied the `readOnly` property of the parent world or set it to `true` if the provided loader was `null`. This was changed with API 4.0. Cloned worlds are created with `readOnly` set to `false` by default unless the provided loader is `null`.  
 
 #### Slime Loaders
 Slime Loaders have been separated into different maven packages, so you can choose what loaders you want to bundle with your plugin:
