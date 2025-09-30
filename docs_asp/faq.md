@@ -13,7 +13,9 @@ Yes, you can!
 
 ## Is ASP compatible with Multiverse-Core?
 
-Multiverse-Core detects slime worlds as unloaded, as it cannot find the world directory, and then just ignores them. There should not be any issues; however, Multiverse-Core commands will not work with ASP worlds.
+Yes, to a limited extent. Multiverse-Core v5.2 and newer supports importing of existing slime worlds into Multiverse with `/mv import`, which will give access to the typical features expected from a Multiverse world. However, Multiverse cannot create a slime world. Instead, use the equivalent command in SlimeWorldManager to create a new slime world, then add to Multiverse with `/mv import` afterwards. To delete a slime world, do not use `/mv delete` directly with Multiverse. Instead, remove the world from Multiverse knowledge with `/mv remove`, then delete it through SlimeWorldManager or other relevant slime world APIs.
+
+More information is explained in this Multiverse-Core GitHub issue: https://github.com/Multiverse/Multiverse-Core/issues/3302#issuecomment-3123845196
 
 ## What's the world size limit?
 
